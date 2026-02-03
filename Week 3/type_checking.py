@@ -7,7 +7,7 @@ test_result = 14 * 150    # allowed → result is 2100
 # But if we try incompatible operations:
 x = "Hello" + 5           # ❌ TypeError at runtime
 
-#Difference between implicit variable declaration are dynamic typing
+#Difference between implicit variable declaration and dynamic typing
 #Implicit variable declaration:
 x = 10      # x is created implicitly as an int
 y = "hello" # y is created implicitly as a string
