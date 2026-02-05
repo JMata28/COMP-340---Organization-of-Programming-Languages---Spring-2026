@@ -2,6 +2,17 @@
 # It only cares whether the object supports the required operations
 #In the example below, both work because both objects have a quack() method.
 
+#Example 1
+
+def returnLen(x):
+	return len(x)
+
+returnLen("Hello")      #Duck
+returnLen([1,5,7])      #Duck
+returnLen(152)          #Error
+
+#Example 2
+
 def make_sound(animal):
     animal.quack()
 
