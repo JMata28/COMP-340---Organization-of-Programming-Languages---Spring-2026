@@ -1,15 +1,15 @@
 #Collection based loop statement
 
-sum = 0
-arr = [1,2,3,4,5]
+# sum = 0
+# arr = [1,2,3,4,5]
 
-for i in arr:
-      sum = sum + i
-      print("The current value of sum is: ", sum)
+# for i in arr:
+#       sum = sum + i
+#       print("The current value of sum is: ", sum)
 
 
 
-#Condition based loop statement (pre-test)
+# Condition based loop statement (pre-test)
 sum = 0
 i = 1
 

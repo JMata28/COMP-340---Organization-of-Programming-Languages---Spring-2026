@@ -1,24 +1,24 @@
 #curColor has currentColor of traffic light
 
-def changecolor(curColor):
+# def changecolor(curColor):
 
-    if curColor == "green":
-        curColor = "yellow"
-    elif curColor == "yellow":
-        curColor = "red"
-    else:
-        curColor = "green"
+#     if curColor == "green":
+#         curColor = "yellow"
+#     elif curColor == "yellow":
+#         curColor = "red"
+#     else:
+#         curColor = "green"
 
-    return curColor
+#     return curColor
 
-curColor = changecolor("red")
-print(curColor)
+# curColor = changecolor("red")
+# print(curColor)
 
 
 #if expression with ternary operator
 
-curColor = "yellow"
+curColor = "red"
 
-curColor = "yellow" if curColor=="red" else "green" if curColor=="yellow" else "red"
+curColor = "green" if curColor=="red" else "red" if curColor=="yellow" else "yellow"
 
 print(curColor)

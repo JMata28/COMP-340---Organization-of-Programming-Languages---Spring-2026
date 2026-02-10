@@ -4,9 +4,7 @@
 using namespace std;
 
 int main(){
-
-
-    // //Count based loop statement
+    //Count based loop statement
     // int sum = 0;
 
     // for(int i = 1; i < 6; i ++) {
@@ -14,7 +12,7 @@ int main(){
     //     cout << "The current value of sum is " << sum << endl;
     // }
 
-    // //Collection based loop statement
+    //Collection based loop statement
     // int sum2 = 0;
     // int arr[] = {1, 2, 3, 4, 5};
 
@@ -23,9 +21,9 @@ int main(){
     //     cout << "The current value of sum2 is: " << sum2 << endl;
     // }
 
-    //Condition-based loop (Post test loop)
+    // Condition-based loop (Post test loop)
     int sum3 = 0;
-    int i3 = 1;
+    int i3 = 100;
 
     do {
         sum3 = sum3 + i3;
