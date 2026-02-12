@@ -18,3 +18,6 @@ student_2 = Student("Tyler", "Parker", 4, "Boston. MA")
 student_2.tuition = 3000
 print(student_2.tuition)
 print(student_1.tuition)
+
+first, last, GPA, address = input("Give me the student input")
+new_student = Student(first, last, GPA, address)
