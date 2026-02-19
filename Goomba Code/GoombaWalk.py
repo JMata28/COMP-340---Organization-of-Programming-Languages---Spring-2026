@@ -1,0 +1,2 @@
+class Goombawalk:
+    pass

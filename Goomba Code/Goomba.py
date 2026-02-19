@@ -1,0 +1,2 @@
+class Goomba:
+    pass
