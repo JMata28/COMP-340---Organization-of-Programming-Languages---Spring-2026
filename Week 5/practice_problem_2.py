@@ -4,6 +4,12 @@ class Library_Item():
         self.title = title
         self.status = checked_out_status
     
+    def checkout(self):
+        if(self.status == True):
+            print(f"This {self.type} is already checked out.")
+        else:
+            print(f"This {self.type} is available for check out.")
+    
 class Book(Library_Item):
     def __init__(self, type, title, checked_out_status, author, publisher):
         super().__init__(type, title, checked_out_status)
@@ -29,4 +35,9 @@ class Movie(Library_Item):
 
 book_1= Book("book", "Moby Dick", False, "Herman Melville", "Penguin Classics")
 book_1.display_book()
+book_1.checkout()
+print("\n")
 
+movie_1 = Movie("movie", "No Way Home", True, "Sam Raimi", ["Tom Holland", "Tobey Maguire", "Andrew Garfield"])
+movie_1.display_movie()
+movie_1.checkout()

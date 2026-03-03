@@ -13,4 +13,5 @@ class SubEmployee(Employee):
 
 emp = SubEmployee("Ross", 30)
 print(emp.name)        # Public accessible
+print(emp._age)        #Still accessible (won't show an error but because it's name is an underscore, we know good coding practice is to NOT access it directly outside of the class)
 emp.show_age()         # Protected accessed through subclass
