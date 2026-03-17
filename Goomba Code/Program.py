@@ -1,4 +1,5 @@
 from Star import Star
+from ParaGoomba import ParaGoomba
 from Goomba import Goomba
 from Ground import Ground
 from GoombaWalk import Goombawalk
@@ -31,3 +32,17 @@ gWalkAnimation = Goombawalk(star, goomba, ground)
 subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
 
 gWalkAnimation.start_animation()
+
+
+#PARAGOOMBA CODE 
+# pGoomba = ParaGoomba(4)
+# pGoomba.draw_sprite()
+
+# star = Star(0)
+# ground = Ground(120)
+# pGoomba = ParaGoomba(4)
+# gWalkAni = Goombawalk(star, pGoomba, ground)
+
+# #Clear console using subprocess
+# subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
+# gWalkAni.start_animation()

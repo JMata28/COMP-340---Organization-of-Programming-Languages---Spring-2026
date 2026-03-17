@@ -14,8 +14,8 @@ class Goombawalk:
         self.__ground.draw_sprite()
 
     def start_animation(self):
-        frame_number = 20 #number of frames drawn
-        sleep_time = 0.2 #time between frames
+        frame_number = 10 #number of frames drawn
+        sleep_time = 0.1 #time between frames
         for i in range(frame_number):
             subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True) # Clear console using subprocess
             self.draw_frame()

@@ -2,27 +2,25 @@ class Goomba:
     def __init__(self, speed: int):
         self.__pos_x = 0
         self.__speed = speed
-        self.__goomba_sprite = [""] * 10
-        self.__set_sprite() #for setting goomba image to __goomba_sprite
+        self._goomba_sprite = [""] * 10
+        self._set_sprite() #for setting goomba image to _goomba_sprite
         self.__direction = True #True: ->, False: <-
 
-
-
-    def __set_sprite(self):
-        self.__goomba_sprite[0] = r"     ________  "
-        self.__goomba_sprite[1] = r"    /        \ "
-        self.__goomba_sprite[2] = r"   /  \    /  \ "
-        self.__goomba_sprite[3] = r"  /   |    |   \ "
-        self.__goomba_sprite[4] = r" /  -^------^-  \ "
-        self.__goomba_sprite[5] = r"|________________| "
-        self.__goomba_sprite[6] = r"      /    \ "
-        self.__goomba_sprite[7] = r" ____|      |____ "
-        self.__goomba_sprite[8] = r"/____\ ==== /____\ "
-        self.__goomba_sprite[9] = r"                     "
+    def _set_sprite(self):
+        self._goomba_sprite[0] = r"     ________  "
+        self._goomba_sprite[1] = r"    /        \ "
+        self._goomba_sprite[2] = r"   /  \    /  \ "
+        self._goomba_sprite[3] = r"  /   |    |   \ "
+        self._goomba_sprite[4] = r" /  -^------^-  \ "
+        self._goomba_sprite[5] = r"|________________| "
+        self._goomba_sprite[6] = r"      /    \ "
+        self._goomba_sprite[7] = r" ____|      |____ "
+        self._goomba_sprite[8] = r"/____\ ==== /____\ "
+        self._goomba_sprite[9] = r"                     "
     
     def draw_sprite(self):
         spaces = " " * self.__pos_x
-        for each_line in self.__goomba_sprite:
+        for each_line in self._goomba_sprite:
             print(spaces + each_line)
 
     def update_pos(self):
