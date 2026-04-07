@@ -6,8 +6,6 @@ class token:
     def __str__(self):
         return (f"Type: {self.type}, Value: {self.value} \n")
 
-     
-
 def tokenize(srcCode):
     tokSeq = []
     while srcCode != "":
@@ -29,5 +27,4 @@ def tokenize(srcCode):
                     char = srcCode[0]
             newToken = token("NUMBER",numbStr)
             tokSeq.append(newToken)
-            srcCode = srcCode[1:]
     return tokSeq
